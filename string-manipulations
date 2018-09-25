@@ -1,0 +1,556 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# String Operators"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## + operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Alice! \n",
+      "Hello Alice! Good morning!\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"Hello \"\n",
+    "b = \"Alice! \"\n",
+    "\n",
+    "print(a + b)\n",
+    "\n",
+    "c = \"Good morning!\"\n",
+    "\n",
+    "print(a+b+c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# * operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "echoechoechoechoecho\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"echo\"\n",
+    "\n",
+    "print(a * 5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## in operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"programming in python\"\n",
+    "b = \"python\"\n",
+    "c = \"code\"\n",
+    "\n",
+    "print(b in a)\n",
+    "print(c in a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Indexing in strings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "e\n",
+      "c\n",
+      "com\n",
+      "example\n",
+      "com\n",
+      "example.com\n",
+      "eapecm\n",
+      "emeo\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = \"example.com\"\n",
+    "\n",
+    "print(s[0])\n",
+    "\n",
+    "print(s[8])\n",
+    "\n",
+    "print(s[8:11])\n",
+    "\n",
+    "print(s[:7])\n",
+    "\n",
+    "print(s[8:])\n",
+    "\n",
+    "print(s[:])\n",
+    "\n",
+    "print(s[0:11:2])\n",
+    "\n",
+    "print(s[0:11:3])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# String functions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Capitalize a string or make the first letter in capital**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Example.com\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Returns the total number of characters in a string**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s.count(\"\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Counts the number of times a substring occurs in a string**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s.count(\"e\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Returns the index of the first substring that occurs in a string**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s.index(\"m\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Returns True if a string is a mix of alphabets and numbers**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"code001\".isalnum())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Concatenates an array of string separated by the dilimeter by which the join method is called on.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Alice, Bob\n"
+     ]
+    }
+   ],
+   "source": [
+    "names = [\"Alice\", \"Bob\"]\n",
+    "\n",
+    "print(\", \".join(names))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Splits a string by dilimeter or substring and returns the splitted substrings in an array**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['example', 'com']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s.split(\".\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Remove leading and trailing spaces**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "->|  Alice  |<-\n",
+      "->| Alice |<-\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \" Alice \" # <- String with leading and trailing spaces\n",
+    "\n",
+    "print(\"->|\",name, \"|<-\") \n",
+    "\n",
+    "print(\"->|\",name.strip(), \"|<-\") # Removed leading and trailing spaces"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Coverts the string into uppercase**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "EXAMPLE.COM\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s.upper())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**zfill is used to pad a numeric digit with 0s to the left.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0001\n",
+      "0011\n",
+      "0111\n",
+      "1111\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"1\".zfill(4))\n",
+    "print(\"11\".zfill(4))\n",
+    "print(\"111\".zfill(4))\n",
+    "print(\"1111\".zfill(4))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Some frequently used string built-in functions**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "s\n",
+      "115\n",
+      "11\n",
+      "['Alice', 'Bob']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(chr(115)) # Returns a character equivalent of a number\n",
+    "\n",
+    "print(ord(\"s\")) # Returns an integer equivalent of a character\n",
+    "\n",
+    "print(len(s)) # Returns length of a string\n",
+    "\n",
+    "print(str(names)) # Returns string equivalent of an object"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# String formatting"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Example 1:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome Alice! Have a great day!\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \"Alice\"\n",
+    "\n",
+    "welcomeText = f\"Welcome {name}! Have a great day!\"\n",
+    "\n",
+    "print(welcomeText)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Example 2:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Bob, your bill amount for the September month is 35.66 \n"
+     ]
+    }
+   ],
+   "source": [
+    "payeeName = \"Bob\"\n",
+    "billMonth = \"September\"\n",
+    "amount = 35.657448\n",
+    "\n",
+    "text = f\"Hello {payeeName}, your bill amount for the {billMonth} month is {amount:.2f} \"\n",
+    "print(text)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Example 3 : Any complicated Python compatible expressions can be evaluated as well with interpolation."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Bob, \n",
+      "Good Morning! \n",
+      "Your total bill for the September month is 37.44 [Amount - 35.66, tax - 1.78]\n"
+     ]
+    }
+   ],
+   "source": [
+    "currentHour = 10\n",
+    "\n",
+    "greetText = f\"Good {'Morning' if currentHour < 12 else 'Afternoon' if currentHour >= 12 and currentHour < 16 else 'Evening'}!\"\n",
+    "\n",
+    "text = f\"Hello {payeeName}, \\n{greetText} \\nYour total bill for the {billMonth} month is {amount*1.05 :.2f} [Amount - {amount:.2f}, tax - {amount*0.05:.2f}]\"\n",
+    "\n",
+    "print(text)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
